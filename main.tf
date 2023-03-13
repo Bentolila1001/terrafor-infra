@@ -55,7 +55,7 @@ resource "aws_key_pair" "sample_key" {
 resource "aws_instance" "sample_server" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t2.micro"
-  vpc_security_group_ids = ["sg-000c219ca381374af"]
+  vpc_security_group_ids = ["sg-0509a44a17cfe3aeb"]
   key_name               = aws_key_pair.sample_key.key_name
 
   tags = {
